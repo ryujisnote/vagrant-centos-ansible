@@ -20,3 +20,11 @@
           - python-devel
           - openssl-devel
           - libselinux-python
+    - name: install molecule
+      pip: 
+        name: "{{ packages }}"
+        state: latest
+      vars:
+        packages:
+          - pip
+          - molecule

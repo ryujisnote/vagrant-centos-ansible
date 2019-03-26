@@ -1,6 +1,8 @@
 # vagrant-centos-ansible
 ansible and molecule test vagrantfile
 
+Windows 10 Pro Ver.1803 (Hyper-V enabled) + Vagrant 2.2.4
+
 ```
 $ vagrant up
 Bringing machine 'default' up with 'hyperv' provider...

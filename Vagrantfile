@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
+  config.vm.provider "hyperv"
   
     if Vagrant.has_plugin?("vagrant-proxyconf") && ENV['PROXY_URL']
       puts '- Proxy Setting ----------------------------------'

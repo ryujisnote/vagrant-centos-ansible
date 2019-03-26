@@ -7,3 +7,16 @@
       yum: 
         name: '*'
         state: latest
+
+    - name: install requires
+      yum:
+        name: "{{ packages }}"
+        state: latest
+      vars:
+        packages:
+          - gcc
+          - git
+          - python-pip
+          - python-devel
+          - openssl-devel
+          - libselinux-python

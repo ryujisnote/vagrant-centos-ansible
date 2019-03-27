@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
-  config.vm.provider "hyperv"
+#  config.vm.provider "hyperv"
   
   config.vm.synced_folder ".", "/vagrant"
 

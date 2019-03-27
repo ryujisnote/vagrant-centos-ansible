@@ -16,6 +16,7 @@
         packages:
           - gcc
           - git
+          - docker
           - python-pip
           - python-devel
           - openssl-devel
@@ -28,3 +29,4 @@
         packages:
           - pip
           - molecule
+          - docker-py

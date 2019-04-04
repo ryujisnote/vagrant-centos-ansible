@@ -13,6 +13,11 @@
         name: 
           - gcc
           - git
+<<<<<<< HEAD
+=======
+          - docker
+          - python-pip
+>>>>>>> 025f85042dbc794f0009918725e7eb7b2a306498
           - python-devel
           - openssl-devel
           - libselinux-python
@@ -22,4 +27,8 @@
       pip: 
         name: 
           - molecule
+<<<<<<< HEAD
         state: latest
+=======
+          - docker-py
+>>>>>>> 025f85042dbc794f0009918725e7eb7b2a306498

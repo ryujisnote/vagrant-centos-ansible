@@ -3,7 +3,7 @@ ansible and molecule test vagrantfile
 
 Windows 10 Pro Ver.1803 (Hyper-V enabled) + Vagrant 2.2.4
 
-```
+```console
 $ vagrant up
 Bringing machine 'default' up with 'hyperv' provider...
 ==> default: Verifying Hyper-V is enabled...
@@ -63,10 +63,9 @@ changed: [default]
 PLAY RECAP *********************************************************************
 default                    : ok=4    changed=3    unreachable=0    failed=0
 ```
-## 設定変更を反映
+## main.ymlを変更した場合の反映方法
 
-```
-user@hostname MINGW64 ~/vagrant-centos-ansible (master)
+```console
 $ vagrant reload --provision
 ==> default: Attempting graceful shutdown of VM...
     default: Configuring the VM...

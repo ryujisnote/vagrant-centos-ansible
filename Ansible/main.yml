@@ -10,21 +10,16 @@
 
     - name: install requires
       yum:
-        name: "{{ packages }}"
-        state: latest
-      vars:
-        packages:
+        name: 
           - gcc
           - git
-          - python-pip
           - python-devel
           - openssl-devel
           - libselinux-python
+        state: latest
+
     - name: install molecule
       pip: 
-        name: "{{ packages }}"
-        state: latest
-      vars:
-        packages:
-          - pip
+        name: 
           - molecule
+        state: latest
